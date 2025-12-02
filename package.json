@@ -1,7 +1,19 @@
 {
   "name": "2025",
+  "type": "module",
+  "main": "index.ts",
+  "author": "Michael Billinghurst <spiderbyte12@gmail.com>",
   "packageManager": "yarn@4.11.0",
+  "scripts": {
+    "test": "vitest",
+    "format": "prettier -w . --log-level error",
+    "day1": "node --loader ts-node/esm src/index.ts "
+  },
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "@types/node": "^24.10.1",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
   }
 }
