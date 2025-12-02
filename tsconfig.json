@@ -1,10 +1,9 @@
-{ 
+{
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
     "outDir": "./build",
-  
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
@@ -14,7 +13,7 @@
     "target": "esnext",
     // For nodejs:
     "lib": ["esnext"],
-    "types": ["node"],
+    "types": ["node", "vitest/globals"],
 
     // Other Outputs
     // "sourceMap": true,
@@ -40,6 +39,6 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }
